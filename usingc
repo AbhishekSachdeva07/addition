@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,sum=0;
+    printf("-----Menu-----\n1.Addition\n0.Exit\n--------------\nEnter Your Choice :  ");
+    scanf("%d",&a);
+    while (a!=0){
+        if (a==1){
+            printf("Tell No. to add :  ");
+            scanf("%d",&b);
+            sum+=b;
+            
+        }else{
+            printf("Invalid Operation");
+            
+        }
+        printf("The Sum is %d\n",sum);
+        printf("Enter Your Choice (1 or 0) :  ");
+        scanf("%d",&a);
+    }
+    
+
+    return 0;
+}
